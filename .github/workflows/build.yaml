@@ -1,0 +1,17 @@
+name: Test workflow
+
+on:
+  push:
+
+jobs:
+  generate-specs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate specs
+        uses: mrmeyers99/openapi-preprocessor@main
+        with:
+          input_file: 'spec.yaml'
+          output_file: 'generatedSpec.yaml'

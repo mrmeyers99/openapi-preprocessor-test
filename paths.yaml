@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: Paths
+  description: Paths
+  version: 1.0.0
+
+paths:
+  /helloWorld:
+    post:
+      description: Say hello
+      requestBody:
+        $ref: "requests.yaml#/components/requests/helloWorldPayload"
+      responses:
+        "200":
+          $ref: "responses.yaml#/components/responses/helloWorldResponse"

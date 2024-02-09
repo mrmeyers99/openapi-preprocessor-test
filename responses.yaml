@@ -1,0 +1,9 @@
+openapi: 3.0.3
+components:
+  responses:
+    helloWorldResponse:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: 'schemas.yaml#/components/schemas/hellowWorldResponseSchema'

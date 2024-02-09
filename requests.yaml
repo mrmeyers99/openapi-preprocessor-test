@@ -1,0 +1,8 @@
+openapi: 3.0.3
+components:
+  requests:
+    helloWorldPayload:
+      content:
+        application/json:
+          schema:
+            $ref: "schemas.yaml#/components/schemas/helloWorldRequestSchema"

@@ -1,0 +1,17 @@
+openapi: 3.0.1
+components:
+  schemas:
+    helloWorldRequestSchema:
+      type: object
+      properties:
+        name:
+          type: string
+          description: name
+
+    hellowWorldResponseSchema:
+      type: object
+      properties:
+        message:
+          type: string
+          description: name
+
